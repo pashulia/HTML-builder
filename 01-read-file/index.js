@@ -1,6 +1,6 @@
-let fs = require('fs');
-let path = require('path');
-let get = fs.ReadStream(path.join(__dirname, 'text.txt'));
+const fs = require('fs');
+const path = require('path');
+const get = fs.ReadStream(path.join(__dirname, 'text.txt'));
 
 let data = '';
 get.on('data', partData => data += partData);

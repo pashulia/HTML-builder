@@ -1,7 +1,7 @@
-let fs = require('fs');
-let path = require('path');
-let style = path.join(__dirname, 'styles');
-let boundle = path.join(__dirname, 'project-dist', 'boundle.css');
+const fs = require('fs');
+const path = require('path');
+const style = path.join(__dirname, 'styles');
+const boundle = path.join(__dirname, 'project-dist', 'boundle.css');
 
 fs.readdir(style, 'utf-8', function(err, files) {
   if (err) {

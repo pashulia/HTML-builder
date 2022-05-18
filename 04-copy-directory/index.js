@@ -1,7 +1,7 @@
-let fs = require('fs/promises');
-let path = require('path');
-let dir = path.join(__dirname, 'files');
-let fileCopy = path.join(__dirname, 'files-copy');
+const fs = require('fs/promises');
+const path = require('path');
+const dir = path.join(__dirname, 'files');
+const fileCopy = path.join(__dirname, 'files-copy');
 
 fs.rm(fileCopy, {
   recursive: true,

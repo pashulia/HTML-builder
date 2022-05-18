@@ -1,7 +1,7 @@
-let fs = require('fs');
-let path = require('path');
-let writeText = fs.WriteStream(path.join(__dirname, 'text.txt'));
-let { stdout, stdin, exit } = require('process');
+const fs = require('fs');
+const path = require('path');
+const writeText = fs.WriteStream(path.join(__dirname, 'text.txt'));
+const { stdout, stdin, exit } = require('process');
 
 stdout.write('привет! введите текст:');
 stdin.on('data', (data) => {

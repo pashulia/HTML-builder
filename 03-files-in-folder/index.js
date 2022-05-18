@@ -1,5 +1,5 @@
-let fs = require('fs');
-let path = require('path');
+const fs = require('fs');
+const path = require('path');
 
 let getInfo = function(file) {
   let data = [];

@@ -1,10 +1,10 @@
-let fs = require('fs');
-let path = require('path');
-let style = path.join(__dirname, 'styles');
-let PD = path.join(__dirname, 'project-dist');
-let pathAssets = path.join(__dirname, 'assets');
-let pathFolder = path.join(__dirname, 'components');
-let assetsCopy = path.join(PD, 'assets');
+const fs = require('fs');
+const path = require('path');
+const style = path.join(__dirname, 'styles');
+const PD = path.join(__dirname, 'project-dist');
+const pathAssets = path.join(__dirname, 'assets');
+const pathFolder = path.join(__dirname, 'components');
+const assetsCopy = path.join(PD, 'assets');
 
 fs.readdir(style, {withFileTypes: true}, async (err, files) => {
   if (err) {
