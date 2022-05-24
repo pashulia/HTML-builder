@@ -10,7 +10,7 @@ stdin.on('data', (data) => {
   }
   writeText.write(data);
 });
-process.on('signt', endFunction);
+process.on('SIGINT', endFunction);
 function endFunction() {
   stdout.write('до свидания!\n');//Если вы не поместите строку прерывания в конце(\n), вы получите странный символ после строки, что-то вроде этого:%
   exit();
